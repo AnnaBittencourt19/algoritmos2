@@ -1,0 +1,60 @@
+1) #include <iostream>
+#include <list>
+using namespace std;
+
+int main(){
+
+list<string> minhaLista;
+
+minhaLista.push_front("Maçã");
+minhaLista.push_front("Banana");
+minhaLista.push_front("Laranja");
+minhaLista.pop_front();
+minhaLista.push_front("Uva");
+minhaLista.pop_front();
+
+cout << "Saída da Lista: " << minhaLista.front() << endl;
+
+return 0;
+}
+
+retornou = banana
+
+2) #include <iostream>
+using namespace std;
+
+int main(){
+
+int x[3];
+int y;
+int *p;
+y = 4;
+p = &y;
+for(int i=0;i<3;i++){
+    x[i] = (*p*i)%10;
+	cout << x[i]<< " ";
+}
+return 0;
+}
+{0,4,8}
+
+3)#include <iostream>
+#include <list>
+using namespace std;
+
+int main(){
+
+list<int> minhaLista;
+int * p, y=13;
+p = &y;
+minhaLista.push_back(5); //ultimo
+minhaLista.push_front(*p-3); //primeiro (10) = virou segundo
+minhaLista.push_front(15)//primeiro primeiro
+minhaLista.pop_back(); //apagou o 5
+minhaLista.push_front(y+7); //20
+minhaLista.pop_front(); //apagou o 20
+
+return 0;
+}
+15, 10
+
